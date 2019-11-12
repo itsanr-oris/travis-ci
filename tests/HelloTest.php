@@ -14,4 +14,9 @@ class HelloTest extends TestCase
     {
         $this->assertEquals('Hello travis-ci!', (new HelloWorld())->sayHello('travis-ci'));
     }
+
+    public function testSay()
+    {
+        $this->assertEquals('Nice to meet you!', (new HelloWorld())->say('Nice to meet you!'));
+    }
 }
