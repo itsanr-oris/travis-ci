@@ -13,7 +13,7 @@ install:
   - composer install
 
 script:
-  - composer test
+  - vendor/bin/phpunit --coverage-clover=coverage.xml
 
 after_success:
   - codecov
