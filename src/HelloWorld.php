@@ -17,4 +17,15 @@ class HelloWorld
     {
         return sprintf('Hello %s!', $target);
     }
+
+    /**
+     * Say something
+     *
+     * @param $message
+     * @return mixed
+     */
+    public function say($message)
+    {
+        return $message;
+    }
 }
